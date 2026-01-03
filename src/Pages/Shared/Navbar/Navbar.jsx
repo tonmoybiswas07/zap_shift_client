@@ -1,8 +1,18 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router';
+import Logo from '../../../Components/Logo/Logo';
+import { FaArrowRight } from 'react-icons/fa';
 
 const Navbar = () => {
+    const link = <>
+    <NavLink className='text-[#606060]'>Services</NavLink>
+    <NavLink className='text-[#606060]'>Coverage</NavLink>
+    <NavLink className='text-[#606060]'>About Us</NavLink>
+    <NavLink className='text-[#606060]'>Pricing</NavLink>
+    <NavLink className='text-[#606060]'>Be a Rider</NavLink>
+    </>
     return (
-       <div className="navbar bg-base-100 shadow-sm">
+       <div className="navbar px-6 bg-base-100 rounded-2xl py-3 shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -11,36 +21,25 @@ const Navbar = () => {
       <ul
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+        {link}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <Link className=" text-3xl flex justify-center items-center font-extrabold"><Logo></Logo><h2 className='mt-5'>ZapShift</h2></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2 bg-base-100 w-40 z-1">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Item 3</a></li>
+    <ul className="menu menu-horizontal gap-7 px-1">
+      {link}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end gap-4 relative">
+    <Link className="btn bg-white rounded-xl">Sign In</Link>
+    <Link className='btn bg-[#CAEB66] rounded-xl'>Sign Up</Link>
+    <div className=''>
+<FaArrowRight className="bg-black text-[#CAEB66] text-2xl w-10 h-10 relative right-5 -rotate-45 p-3 rounded-full flex items-center justify-center" />
+
+    </div>
+    
+
   </div>
 </div>
     );

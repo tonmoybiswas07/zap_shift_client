@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../../../Components/Logo/Logo';
 import { FaFacebookF, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import Container from '../../../Components/Container/Container';
+
 
 const Footer = () => {
     return (
@@ -18,7 +18,7 @@ const Footer = () => {
     </p>
     
   </aside>
-  <hr class="w-7xl border-t-2 border-dashed border-[#03464D] mx-auto my-1" />
+  <hr class="w-6xl border-t-2 border-dashed border-[#03464D] mx-auto my-1" />
 
   <nav>
     
@@ -32,7 +32,7 @@ const Footer = () => {
     <li><a href="">Contact</a></li>
    </ul>
   </nav>
-  <hr class="w-7xl border-t-2 border-dashed border-[#03464D] mx-auto my-1" />
+  <hr class="w-6xl  border-t-2 border-dashed border-[#03464D] mx-auto my-1" />
   <div className='flex justify-center items-center gap-10'>
     <FaLinkedin className='text-3xl'/>
     <FaXTwitter className='text-3xl'/>
