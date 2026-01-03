@@ -5,11 +5,11 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Navbar = () => {
     const link = <>
-    <NavLink className='text-[#606060]'>Services</NavLink>
-    <NavLink className='text-[#606060]'>Coverage</NavLink>
-    <NavLink className='text-[#606060]'>About Us</NavLink>
-    <NavLink className='text-[#606060]'>Pricing</NavLink>
-    <NavLink className='text-[#606060]'>Be a Rider</NavLink>
+    <NavLink to={'/services'} className='text-[#606060] text-md'>Services</NavLink>
+    <NavLink className='text-[#606060] text-md'>Coverage</NavLink>
+    <NavLink className='text-[#606060] text-md'>About Us</NavLink>
+    <NavLink className='text-[#606060] text-md'>Pricing</NavLink>
+    <NavLink className='text-[#606060] text-md'>Be a Rider</NavLink>
     </>
     return (
        <div className="navbar px-6 bg-base-100 rounded-2xl py-3 shadow-sm">
@@ -24,10 +24,10 @@ const Navbar = () => {
         {link}
       </ul>
     </div>
-    <Link className=" text-3xl flex justify-center items-center font-extrabold"><Logo></Logo><h2 className='mt-5'>ZapShift</h2></Link>
+    <Link to={'/'} className=" text-3xl flex justify-center items-center font-extrabold"><Logo></Logo><h2 className='mt-5'>ZapShift</h2></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal gap-7 px-1">
+    <ul className="menu menu-horizontal gap-10 px-1">
       {link}
     </ul>
   </div>

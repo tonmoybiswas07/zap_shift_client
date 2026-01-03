@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../../../Components/Logo/Logo';
 import { FaFacebookF, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { Link } from 'react-router';
 
 
 const Footer = () => {
@@ -24,12 +25,12 @@ const Footer = () => {
     
 
    <ul className='flex justify-center items-center gap-10'>
-    <li><a href="">Services</a></li>
-    <li><a href="">Coverage</a></li>
-    <li><a href="">About Us</a></li>
-    <li><a href="">Pricing</a></li>
-    <li><a href="">Blog</a></li>
-    <li><a href="">Contact</a></li>
+    <Link><a href="">Services</a></Link>
+    <Link><a href="">Coverage</a></Link>
+    <Link><a href="">About Us</a></Link>
+    <Link><a href="">Pricing</a></Link>
+    <Link><a href="">Blog</a></Link>
+    <Link><a href="">Contact</a></Link>
    </ul>
   </nav>
   <hr class="w-6xl  border-t-2 border-dashed border-[#03464D] mx-auto my-1" />
