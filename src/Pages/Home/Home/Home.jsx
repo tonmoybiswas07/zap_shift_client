@@ -5,6 +5,7 @@ import Brands from '../Brands/Brands';
 import QuestionAnswer from '../QuestionAnswer/QuestionAnswer';
 import OurServices from '../OurServices/OurServices';
 import Support from '../Support/Support';
+import CustomerSatisfaction from '../CustomerSatisfaction/CustomerSatisfaction';
 
 
 const ourService = fetch('/services.json').then(res => res.json());
@@ -18,6 +19,7 @@ const Home = () => {
             <OurServices ourService={ourService}></OurServices>
             <Brands></Brands>
             <Support></Support>
+            <CustomerSatisfaction></CustomerSatisfaction>
             <QuestionAnswer></QuestionAnswer>
         </div>
     );
