@@ -6,7 +6,7 @@ import { FaArrowRight } from 'react-icons/fa';
 const Navbar = () => {
     const link = <>
     <NavLink to={'/services'} className='text-[#606060] text-md'>Services</NavLink>
-    <NavLink className='text-[#606060] text-md'>Coverage</NavLink>
+    <NavLink to={'/coverage'} className='text-[#606060] text-md'>Coverage</NavLink>
     <NavLink className='text-[#606060] text-md'>About Us</NavLink>
     <NavLink className='text-[#606060] text-md'>Pricing</NavLink>
     <NavLink className='text-[#606060] text-md'>Be a Rider</NavLink>
