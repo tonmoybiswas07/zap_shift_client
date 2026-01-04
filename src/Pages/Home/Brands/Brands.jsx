@@ -28,7 +28,10 @@ const Brands = () => {
                     
                 </Marquee>
             </div>
+            <hr className="border-t-2 border-dashed border-gray-400 my-6" />
+
         </div>
+        
     );
 };
 
