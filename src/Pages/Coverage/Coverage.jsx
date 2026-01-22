@@ -35,7 +35,7 @@ const Coverage = () => {
         <div className="flex justify-start items-start mt-5">
           <div>
             <input
-              className="bg-gray-200 border-2 border-[#CAEB66] rounded-2xl h-10 w-70 pl-3"
+              className="bg-gray-200 border-2 border-[#CAEB66]  rounded-2xl h-10 w-70 pl-3"
               placeholder="search here"
               type="search"
               name="location"
