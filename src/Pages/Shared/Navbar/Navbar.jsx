@@ -32,8 +32,8 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-4 relative">
-    <Link className="btn bg-white rounded-xl">Sign In</Link>
-    <Link className='btn bg-[#CAEB66] rounded-xl'>Sign Up</Link>
+    <Link to={'/login'} className="btn bg-white rounded-xl">Sign In</Link>
+    <Link to={'/register'} className='btn bg-[#CAEB66] rounded-xl'>Sign Up</Link>
     <div className=''>
 <FaArrowRight className="bg-black text-[#CAEB66] text-2xl w-10 h-10 relative right-5 -rotate-45 p-3 rounded-full flex items-center justify-center" />
 

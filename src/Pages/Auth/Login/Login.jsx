@@ -1,5 +1,6 @@
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router";
 
 const Login = () => {
   return (
@@ -35,9 +36,9 @@ const Login = () => {
                 className="input input-bordered w-full"
               />
               <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
+                <Link to="/forgot-password" className="label-text-alt link link-hover">
                   Forget Password?
-                </a>
+                </Link>
               </label>
             </div>
 
@@ -50,9 +51,9 @@ const Login = () => {
           {/* Register */}
           <p className="text-sm text-center mt-4">
             Don’t have any account?
-            <a href="#" className="text-lime-600 font-medium ml-1">
+            <Link to="/register" className="text-lime-600 font-medium ml-1">
               Register
-            </a>
+            </Link>
           </p>
 
           {/* Divider */}
